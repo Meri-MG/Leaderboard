@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  margin: 40px;
+}
+
+.leaderboard {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 40px 0 0 40px;
+  padding: 20px 0;
+}
+
+.scores-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-scores {
+  display: flex;
+  margin-right: 40px;
+}
+
+.recent-scores p {
+  margin-right: 20px;
+}
+
+.scores {
+  border: 2px solid black;
+  margin: 20px 40px 0 0;
+  padding: 5px 0 0 5px;
+}
+
+.scores p {
+  padding: 10px;
+}
+
+.add-score {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-score .name {
+  margin-top: 20px;
+}
+
+.add-score input {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+#submit {
+  width: 60px;
+  align-self: flex-end;
+}
+
+button {
+  border: 2px solid black;
+  box-shadow: 1px 3px;
+  padding: 0 5px;
+}
