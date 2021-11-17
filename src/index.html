@@ -9,28 +9,22 @@
     <main>
         <h1>Leaderboard</h1>
         <section class="leaderboard">
-        <div class="scores-wrapper">
-        <div class="recent-scores">
-            <p>Recent scores</p>
-            <button type="button" id="refresh">Refresh</button>
-        </div>
-        <div class="scores">
-            <p>Name: 100</p>
-            <p>Name: 20</p>
-            <p>Name: 50</p>
-            <p>Name: 78</p>
-            <p>Name: 125</p>
-            <p>Name: 77</p>
-            <p>Name: 42</p>
-        </div>
-    </div>
-        <div class="add-score">
-            <p>Add your score</p>
-            <input type="text" class="name" placeholder="Your name">
-            <input type="text" placeholder="Your score">
-            <button type="submit" id="submit">Submit</button>
-        </div>
-    </section>
-    </main>   
+            <div class="scores-wrapper">
+                <div class="recent-scores">
+                    <p>Recent scores</p>
+                    <button type="button" id="refresh">Refresh</button>
+                </div>
+                <ul class="scores">
+                </ul>
+            </div>
+            <form class="add-score">
+                <p>Add your score</p>
+                <input type="text" class="name" placeholder="Your name">
+                <input type="text" class="score" placeholder="Your score">
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+    </main>  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  -->
 </body>
 </html>
