@@ -3,7 +3,7 @@
 
 > In this activity was set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. The version of the app is following a given wireframe.
 
-![Desktop Version](https://raw.github.com/Meri-MG/Leaderboard/styling/leaderboard.png)
+![Desktop Version](https://raw.github.com/Meri-MG/Leaderboard/development/leaderboard.png)
 
 ## Built With
 
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-> Project live demo [link](https://meri-mg.github.io/Leaderboard/dist/../../../../dist/index.html)
+> Project live demo [link](https://meri-mg.github.io/Leaderboard/dist../../../../dist/index.html)
 
 
 # Getting Started
