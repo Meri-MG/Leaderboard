@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-Live Demo is not yet available 
+> Project live demo [link](https://meri-mg.github.io/Leaderboard/dist/)
 
 
 # Getting Started
