@@ -2,10 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 body {
   background-color: beige;
+}
+
+main {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -15,7 +23,6 @@ h1 {
 .leaderboard {
   display: flex;
   justify-content: space-around;
-  width: 40%;
   margin: 40px 0 0 40px;
   padding: 20px 0;
 }
@@ -28,6 +35,7 @@ h1 {
 .recent-scores {
   display: flex;
   margin-right: 40px;
+  width: 100%;
 }
 
 .recent-scores p {
@@ -56,6 +64,12 @@ h1 {
 .add-score input {
   margin-bottom: 20px;
   padding: 5px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
 }
 
 #submit {
@@ -67,4 +81,5 @@ button {
   border: 2px solid black;
   box-shadow: 1px 3px;
   padding: 0 5px;
+  cursor: pointer;
 }
