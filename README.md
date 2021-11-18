@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-> Project live demo [link](https://meri-mg.github.io/Leaderboard/dist/)
+> Project live demo [link](https://meri-mg.github.io/Leaderboard/dist/../../../../dist/index.html)
 
 
 # Getting Started
