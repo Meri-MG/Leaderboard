@@ -31,6 +31,5 @@ submit.addEventListener('click', (e) => {
 });
 
 refresh.addEventListener('click', () => {
-  getScore();
   display();
 });
