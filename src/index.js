@@ -10,9 +10,9 @@ const display = () => {
   getScore()
     .then((result) => {
       scoresContainer.innerHTML = '';
-      console.log(result);
-      result.forEach((res) => {
-        scoresContainer.innerHTML += `<li><span>${res.name}</span> : <span>${res.score}</span </li>`;
+      result.result.map((res) => {
+        scoresContainer.innerHTML += `<li><span>${res.user}</span> : <span>${res.score}</span </li>`;
+        return result;
       });
     });
 };

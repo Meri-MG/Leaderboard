@@ -1,48 +1,21 @@
-const getID = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+export const postScore = async (name, points) => {
+  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zyXD17r5UDDrXoQlCh42/scores/';
+  const response = await fetch(url, {
     method: 'POST',
     headers: {
-      'content-type': 'application/json',
+      'Content-type': 'application/json',
     },
     body: JSON.stringify({
-      name: 'My cool new game',
+      user: name,
+      score: points,
     }),
   });
-  // const data = await response.json();
-  //  console.log(data);
+  return response.json();
 };
-getID();
-
-export const postScore = async (name, points) => {
-  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nVuQ1qNTM7A30xlNLM5b/scores/';
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        user: name,
-        score: points,
-      }),
-    });
-    return await response.json();
-  } catch (error) {
-    return error;
-  }
-};
-
-postScore();
 
 export const getScore = async () => {
-  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nVuQ1qNTM7A30xlNLM5b/scores/';
-  try {
-    const response = await fetch(url);
-    return await response.json();
-  } catch (error) {
-    return error;
-  }
+  const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zyXD17r5UDDrXoQlCh42/scores/';
+  const response = await fetch(url);
+  return response.json();
 };
-
-getScore();
 export default { getScore, postScore };
